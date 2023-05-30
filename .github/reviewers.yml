@@ -1,0 +1,20 @@
+reviewers:
+  # The default reviewers
+  defaults:
+    - team:testers # GitHub team
+
+files:
+  # Keys are glob expressions.
+  # You can assign groups defined above as well as GitHub usernames.
+  '**':
+    - team:testers # GitHub team
+
+options:
+  ignore_draft: true
+  ignored_keywords:
+    - DO NOT REVIEW
+  enable_group_assignment: false
+
+  # Randomly pick reviewers up to this number.
+  # Do not set this option if you'd like to assign all matching reviewers.
+  number_of_reviewers: 3
